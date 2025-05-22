@@ -27,6 +27,20 @@ BLEU + ROGUE (text generation) \
 Accuracy + F1 (emotion classification) 
 
 
+## Commands
+Download, normalized, and translate dataset
+```
+python_datapreprocessing.py
+```
 
+Transform into dataasetclass
+```
+python dataaset_class.py
+```
+
+Finetune
+```
+python train.py
+```
 
 
