@@ -1,5 +1,12 @@
-torch>=2.0
-transformers>=4.25
-pandas
+transformers==4.40.0
+datasets
+evaluate
 scikit-learn
-tqdm
+pandas
+torch>=1.12
+sentencepiece
+protobuf
+accelerate>=0.21.0
+absl-py
+nltk
+rouge-score
