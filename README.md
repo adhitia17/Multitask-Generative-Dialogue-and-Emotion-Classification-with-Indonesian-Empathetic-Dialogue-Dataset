@@ -20,3 +20,8 @@ Warm Up Steps	500
 Optimizer	Adam
 Evaluation Metrics	BLEU + ROGUE (text generation)
 Accuracy + F1 (emotion classification)
+
+
+
+![image](https://github.com/user-attachments/assets/5cd718f5-e978-4ab5-9f0c-d4fcba14ad7d)
+
