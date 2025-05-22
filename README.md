@@ -2,26 +2,27 @@
 
 This research provides a new refresher in the field of emotion-aware dialogue systems in Indonesian by creating the Indonesian Empathetic Dialogue Dataset and conducting multitask text generation and emotion classification training using pretrained idT5
 
+﻿# Original Dataset
+wget https://dl.fbaipublicfiles.com/parlai/empatheticdialogues/empatheticdialogues.tar.gz
 
-![image](https://github.com/user-attachments/assets/96c92895-e86d-4171-a919-a2bf7cc0702e)
-
-
-
-
-
-
-Component	Configuration
-Learning Rate	1e-5
-Weight Decay	0.01
-Token	512
-Batch	64
-Epochs	40
-Warm Up Steps	500
-Optimizer	Adam
-Evaluation Metrics	BLEU + ROGUE (text generation)
-Accuracy + F1 (emotion classification)
+Translated Dataset
+xxxxxxxxxxx
 
 
 
-![image](https://github.com/user-attachments/assets/5cd718f5-e978-4ab5-9f0c-d4fcba14ad7d)
+
+Component	Configuration \
+Learning Rate	1e-5 \
+Weight Decay	0.01 \
+Token	512 \
+Batch	64 \
+Epochs	40 \
+Warm Up Steps	500 \
+Optimizer	Adam \
+Evaluation Metrics	BLEU + ROGUE (text generation) \
+Accuracy + F1 (emotion classification) \
+
+
+
+
 
