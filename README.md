@@ -43,4 +43,7 @@ Finetune
 python train.py
 ```
 
-
+Evaluate
+```
+python eval.py
+```
