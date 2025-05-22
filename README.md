@@ -30,7 +30,7 @@ Accuracy + F1 (emotion classification)
 ## Commands
 Download, Normalized, and Translate Dataset
 ```
-python_datapreprocessing.py
+python data_preprocessing.py
 ```
 
 Transform into Dataaset Class
