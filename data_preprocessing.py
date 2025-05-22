@@ -43,7 +43,7 @@ if not all(os.path.exists(f) for f in data_files):
         pass
     print("Data preparation complete")
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "7"
 os.environ["NCCL_P2P_DISABLE"] = "1"
 
 model_name = "facebook/nllb-200-1.3B"
