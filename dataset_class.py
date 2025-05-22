@@ -104,7 +104,7 @@ def preprocess_dataframe(df_path: str, output_dir: str, file_prefix: str, is_tra
 
 if __name__ == "__main__":
     base_input_dir = "dataset/translated"
-    output_dir = "dataset/datasetclass_nogroup"
+    output_dir = "dataset/datasetclass"
 
     preprocess_dataframe(
         os.path.join(base_input_dir, "train_translated.csv"),
