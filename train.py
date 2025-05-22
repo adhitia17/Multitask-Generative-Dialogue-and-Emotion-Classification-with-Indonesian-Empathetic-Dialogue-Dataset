@@ -10,6 +10,9 @@ import argparse
 import json
 import shutil
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "7"
+os.environ["NCCL_P2P_DISABLE"] = "1"
+
 MODEL_NAME = "muchad/idt5-base"
 DEFAULT_DATASETCLASS_DIR = "dataset/datasetclass"
 DEFAULT_CHECKPOINT_DIR = "./t5_multitask_checkpoints"
