@@ -11,7 +11,7 @@ import json
 import shutil
 
 MODEL_NAME = "muchad/idt5-base"
-DEFAULT_PROCESSED_DATA_DIR = "dataset/datasetclass_nogroup"
+DEFAULT_DATASETCLASS_DIR = "dataset/datasetclass"
 DEFAULT_CHECKPOINT_DIR = "./t5_multitask_checkpoints"
 DEFAULT_HF_MODEL_DIR = "./t5_multitask_hf_model"
 DEFAULT_TRAINER_LOG_FILE = "trainer_log.json"
@@ -258,8 +258,8 @@ def train(args):
     print(f"Loading tokenizer: {MODEL_NAME}")
     tokenizer = T5Tokenizer.from_pretrained(MODEL_NAME, legacy=False)
 
-    train_file_path = os.path.join(args.processed_data_dir, "train_datasetclass.csv")
-    valid_file_path = os.path.join(args.processed_data_dir, "valid_datasetclass.csv")
+    train_file_path = os.path.join(args.datasetclass_dir, "train_datasetclass.csv")
+    valid_file_path = os.path.join(args.datasetclass_dir, "valid_datasetclass.csv")
 
     print("Creating datasets and dataloaders...")
     train_dataset = MultitaskDatasetCSV(tokenizer, train_file_path, args.max_seq_length, args.max_target_length)
@@ -356,8 +356,8 @@ def train(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train T5 model for multitask Dialogue and Emotion Classification.")
-    parser.add_argument("--processed_data_dir", type=str, default=DEFAULT_PROCESSED_DATA_DIR,
-                        help="Directory containing processed CSV files.")
+    parser.add_argument("--datasetclass_dir", type=str, default=DEFAULT_DATASETCLASS_DIR,
+                        help="Directory containing datasetclass CSV files.")
     parser.add_argument("--checkpoint_dir", type=str, default=DEFAULT_CHECKPOINT_DIR,
                         help="Directory to save model checkpoints and logs.")
     parser.add_argument("--hf_model_dir", type=str, default=DEFAULT_HF_MODEL_DIR,
