@@ -1,6 +1,6 @@
 ﻿# Multitask-Generative-Dialogue-and-Emotion-Classification-with-Indonesian-Empathetic-Dialogue-Dataset
 
-This research provides a new refresher in the field of emotion-aware dialogue systems in Indonesian by creating the Indonesian Empathetic Dialogue Dataset and conducting multitask text generation and emotion classification training using pretrained idT5
+This model provides a new refresher in the field of emotion-aware dialogue systems in Indonesian by creating the Indonesian Empathetic Dialogue Dataset and conducting multitask text generation and emotion classification training using pretrained idT5
 
 ## Original Dataset
 EmpatheticDialogue Original Dataset
