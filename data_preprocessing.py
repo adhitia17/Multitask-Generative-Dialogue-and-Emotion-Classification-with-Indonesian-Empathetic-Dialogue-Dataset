@@ -64,11 +64,10 @@ keep_columns = ['conv_id', 'utterance_idx', 'context', 'prompt', 'utterance']
 def clean_text(text):
     if not isinstance(text, str):
         text = str(text)
+    text = text.replace("_comma_", ",")
     text = text.lower().strip()
     text = re.sub(r'\s+', ' ', text)
     text = re.sub(r"[^a-z0-9\s.,?!']", "", text)
-    text = text.replace("_comma_", ",")
-    text = text.replace("_apostrophe_", "'")
     return text
 
 def process_file(input_path, output_path):
