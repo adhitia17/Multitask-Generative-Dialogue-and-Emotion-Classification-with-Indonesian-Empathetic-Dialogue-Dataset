@@ -45,5 +45,5 @@ python train.py
 
 Evaluate Model
 ```
-python eval.py
+python eval.py --checkpoint_path=<path_to_best_checkpoint>
 ```
