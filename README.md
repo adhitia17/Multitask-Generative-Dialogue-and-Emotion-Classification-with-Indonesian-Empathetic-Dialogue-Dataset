@@ -33,7 +33,7 @@ Download, Normalized, and Translate Dataset
 python data_preprocessing.py
 ```
 
-Transform into Dataaset Class
+Transform into Dataset Class
 ```
 python dataaset_class.py
 ```
