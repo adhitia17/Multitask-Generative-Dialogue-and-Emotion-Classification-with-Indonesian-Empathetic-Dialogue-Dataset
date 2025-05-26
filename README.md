@@ -10,9 +10,6 @@ wget https://dl.fbaipublicfiles.com/parlai/empatheticdialogues/empatheticdialogu
 
 ## Translated Dataset
 Dataset Translated Using NLBB-200-1.3B
-```
-xxxxxxxxx
-```
 
 ## Training	Configuration
 **Learning Rate**:	1e-5 \
