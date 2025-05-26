@@ -371,7 +371,7 @@ if __name__ == "__main__":
                         help="Maximum target sequence length (tokens).")
     parser.add_argument("--batch_size", type=int, default=32,
                         help="Batch size for training.")
-    parser.add_argument("--num_epochs", type=int, default=40,
+    parser.add_argument("--num_epochs", type=int, default=50,
                         help="Number of training epochs.")
     parser.add_argument("--learning_rate", type=float, default=1e-5,
                         help="Learning rate for the optimizer.")
